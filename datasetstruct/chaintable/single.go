@@ -61,7 +61,6 @@ func (h *HeadLinkNode) Foreach() (res []Element) {
 	}
 	return res
 }
-
 func (h *HeadLinkNode) Add(node Element) {
 	l := h.Node
 	for {
@@ -78,7 +77,6 @@ func (h *HeadLinkNode) Add(node Element) {
 	}
 	h.Length++
 }
-
 func (h *HeadLinkNode) Remove(index int) error {
 	length := h.Len()
 	if index < 1 || index > length {
@@ -140,7 +138,6 @@ func (h *HeadLinkNode) Search(node Element) int {
 	}
 	return index
 }
-
 func (h *HeadLinkNode) Get(index int) *LinkNode {
 	length := h.Len()
 	if index < 1 || length < index {
